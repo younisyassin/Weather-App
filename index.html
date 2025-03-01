@@ -3,40 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather</title>
-    </head>
-    <body>
-       <div class = "container">
-      <h1>Weather App</h1>
-      <form action="">
-       <input type="text" id="city-input" placeholder="Enter City">
-       <input type="submit" value="Get weather">
-      </form>
-      
-      <div class = "Weather-data">22c</div>
-      <div class="icon">
-        <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather icon">
-      </div>
-      <div class = "temperature">22c</div>
-      <div class = "description">Sunny</div>
-      <div class = "details">
-        <div>Feels like: 23c</div>
-        <div>Humidity: 40% </div>
-        <div>Wind speed: 5 m/s</div>
-      </div>
+    <form action="" class="weatherform">
+        <input class="cityinput" type="text" name="input_city" id="city_name" placeholder="Inter the City">
+        <button type="submit">Get Weather</button>
+    </form>
 
-       </div>
-      </div>
-      <script src="index.js"></script>
-    </body>
-    </html>
-
+        <div class="card" style="display: none">
+            <h1 class="cityDisplay">Miami</h1>
+            <p class="fh">90°F</p>
+            <p class="tempDisplay"> Humidity: 75%</p>
+            <p class="descDisplay">Clear Skies</p>
+            <p class="weatherEmoji"></p>
+            <p class="errorDisplay">please insert a city</p>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
